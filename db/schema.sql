@@ -1,0 +1,2 @@
+CREATE DATABASE dive_db
+USE DATABASE dive_db
