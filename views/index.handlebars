@@ -3,11 +3,13 @@
     <div class="container">
         <div class="row">
             <div class="col s6">
-                <h2>{{this.id " " this.spot}}</h2>
+                {{!-- {{#each topSpots}} --}}
+                <h2>{{this.spot}}</h2>
                 <div class="slider">
                     <ul class="slides">
+                        {{#each this.images}}
                         <li>
-                            {{#each this.images}}
+                            <img src = {{this}}> 
                         </li>
                         {{/each}}
                     </ul>
@@ -15,27 +17,16 @@
             </div>
             <div class="col s6">
                 <div class="card-panel">
-                    {{#each this.body}}
+                    {{this.body}}
                 </div>
-                {{/each}}
+                {{!-- {{/each}} --}}
             </div>
         </div>
     </div>
 </main>
 
 <script>
-    $(document).ready(function () {
-        $('.slider').slider();
-
-//api call to get 
-
-        $ajax("/topSpots/" + $(this).attr("id"), {
-            type: "GET",
-            dataType: JSON
-        }).then(function(){
-            $(this.images).split()
-        })
-     
-
+    $(document).ready(function(){
+      $('.slider').slider();
     });
 </script>
