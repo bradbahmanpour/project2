@@ -5,6 +5,10 @@
  *
  * Made By MaterializeCSS.com
  */
+
+ body {
+   background-color: #0bafaf;
+ }
 .nav-wrapper {
   background-color:#ff0000c5;
   
@@ -17,17 +21,24 @@ nav ul a,
 nav .brand-logo {
   color: white
 }
+#download-button {
+  background-color:#0bafaf
+}
+.btn-large waves-effect waves-light lighten-1 {
+  background-color: #0bafaf;
+}
 
 p {
   line-height: 2rem;
 }
 
 .sidenav-trigger {
-  color: #26a69a;
+  color: #0bafaf;
 }
 .center {
   color: white;
 }
+
 
 .parallax-container {
   min-height: 380px;
@@ -57,15 +68,24 @@ p {
 
 #icon-block1 {
   background-image: url("./css/images.scuba.jpg");
-  padding: 0 15px;
+  width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
 }
 #icon-block2 {
   background-image: url("./css/images.scubajump.jpg");
-  padding: 0 15px;
+  width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
 }
 #icon-block3 {
   background-image: url("./css/images.scuba.jpg");
-  padding: 0 15px;
+  width: 300px;
+  border: 25px solid green;
+  padding: 25px;
+  margin: 25px;
 }
 #icon-block1 .material-icons {
   font-size: inherit;
@@ -76,7 +96,26 @@ p {
 #icon-block3 .material-icons {
   font-size: inherit;
 }
+.carousel carousel-slider center {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.carousel-fixed-item center{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.col s12 m4 {
+  width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
 
 footer.page-footer {
   margin: 0;
+  background-color: #0bafaf; 
 }
