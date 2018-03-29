@@ -3,6 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col s6">
+                <h2>{{this.id " " this.spot}}</h2>
                 <div class="slider">
                     <ul class="slides">
                         <li>
@@ -26,6 +27,14 @@
     $(document).ready(function () {
         $('.slider').slider();
 
+//api call to get 
+
+        $ajax("/topSpots/" + $(this).attr("id"), {
+            type: "GET",
+            dataType: JSON
+        }).then(function(){
+            $(this.images).split()
+        })
      
 
     });

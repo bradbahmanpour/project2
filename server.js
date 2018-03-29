@@ -13,14 +13,12 @@ var PORT = process.env.PORT || 8080;
 
 var db = require("./models");
 
-db.sequelize.sync({}).then(function() {
-  console.log("db synced...");
-});
-
 // Sets up the Express app to handle data parsing
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 // parse application/json
 app.use(bodyParser.json());
 
@@ -29,10 +27,14 @@ app.use(express.static("app/public"));
 
 // Routes
 // =============================================================
-// require("./app/routes/api-routes.js")(app);
+require("./routes/api-routes.js")(app);
 
 // Starts the server to begin listening
 // =============================================================
-app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
+db.sequelize.sync({}).then(function () {
+  console.log("db synced...");
+
+  app.listen(PORT, function () {
+    console.log("App listening on PORT " + PORT);
+  });
 });
