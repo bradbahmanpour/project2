@@ -6,24 +6,27 @@
                 <div class="slider">
                     <ul class="slides">
                         <li>
-                            {{this.images}}
+                            {{#each this.images}}
                         </li>
+                        {{/each}}
                     </ul>
                 </div>
             </div>
             <div class="col s6">
                 <div class="card-panel">
-                    {{this.body}}
+                    {{#each this.body}}
                 </div>
+                {{/each}}
             </div>
         </div>
     </div>
 </main>
 
-
 <script>
     $(document).ready(function () {
         $('.slider').slider();
+
+     
 
     });
 </script>
