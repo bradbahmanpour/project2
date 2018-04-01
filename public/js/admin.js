@@ -46,6 +46,10 @@ $(document).ready(function() {
       classesToAdd.push(createNewRow(classes[i]));
     }
     classContainer.append(classesToAdd);
+    var messageH2 = $("<h3>");
+    messageH2.css({ "text-align": "center", "margin-top": "30px" });
+    messageH2.html("<a href='/classes'>Click here</a> to add a new class.");
+    classContainer.append(messageH2);
   }
 
   // This function constructs a post's HTML
@@ -112,11 +116,11 @@ $(document).ready(function() {
 
   // This function displays a message when there are no posts
   function displayEmpty() {
-    blogContainer.empty();
+    classContainer.empty();
     var messageH2 = $("<h2>");
     messageH2.css({ "text-align": "center", "margin-top": "50px" });
-    messageH2.html("No posts yet for this category, navigate <a href='/cms'>here</a> in order to create a new post.");
-    blogContainer.append(messageH2);
+    messageH2.html("No Classes has been created yet!, navigate <a href='/classes'>here</a> in order to create a new class.");
+    classContainer.append(messageH2);
   }
 
   // This function handles reloading new posts when the category changes
