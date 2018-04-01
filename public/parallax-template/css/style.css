@@ -50,6 +50,9 @@ p {
     width: 100%;
   }
 
+  
+  
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -66,48 +69,8 @@ p {
   }
 }
 
-#icon-block1 {
-  background-image: url("./css/images.scuba.jpg");
-  width: 300px;
-    border: 25px solid green;
-    padding: 25px;
-    margin: 25px;
-}
-#icon-block2 {
-  background-image: url("./css/images.scubajump.jpg");
-  width: 300px;
-    border: 25px solid green;
-    padding: 25px;
-    margin: 25px;
-}
-#icon-block3 {
-  background-image: url("./css/images.scuba.jpg");
-  width: 300px;
-  border: 25px solid green;
-  padding: 25px;
-  margin: 25px;
-}
-#icon-block1 .material-icons {
-  font-size: inherit;
-}
-#icon-block2 .material-icons {
-  font-size: inherit;
-}
-#icon-block3 .material-icons {
-  font-size: inherit;
-}
-.carousel carousel-slider center {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-.carousel-fixed-item center{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
+
+
 .col s12 m4 {
   width: 300px;
     border: 25px solid green;
