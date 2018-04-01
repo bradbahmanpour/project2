@@ -24,11 +24,27 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col s6">
+                <div id="map">
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 
 <script>
     $(document).ready(function(){
       $('.slider').slider();
+      var mapURL = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCE2UJNeuqy6Tvi8dkBLXTdSMq4YLQi-y4&callback=initMap";
+   
+        //get top 15 songs by artist
+        $.ajax({
+            url: mapURL,
+            method: "GET",
+        }).then(function(response) {
+            console.log("MAPS RES");
+            console.log(response);
+        });
     });
 </script>
