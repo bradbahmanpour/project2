@@ -10,3 +10,13 @@ html body {
     height: 400px;      
 };
 
+#h1 {
+    font-size: 24px !important;
+    color: #ECEBE4 !important;
+};
+
+#weatherHolder {
+    color: #ECEBE4;
+    font-size: 14px;
+}
+
