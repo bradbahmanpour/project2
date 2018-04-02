@@ -1,6 +1,10 @@
-<h1 id="h1">Top Dive Spots in Los Angeles</h1>
 <main>
-    <div class="container">
+    <div class="paralax-container">
+        <div class="row">
+            <div class="col s12">
+                <h1 id="h1">Brad's Top Dive Sites!</h1>
+            </div>
+        </div>
         <div class="row">
             <div class="col s6">
                 <h2>{{this.spot}}</h2>
@@ -12,7 +16,7 @@
                     <ul class="slides">
                         {{#each this.images}}
                         <li>
-                            <img src = {{this}}> 
+                            <img src={{this}}>
                         </li>
                         {{/each}}
                     </ul>
@@ -26,13 +30,26 @@
         </div>
         <div class="row">
             <div class="col s6">
+                <h4 id="mapHead">Get there!</h4>
+            </div>
+            <div class="col s 6">
+                <h4 id="weatherCon">Weather Conditions</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
                 <div id="map">
                 </div>
             </div>
             <div class="col s6">
-                <h6>Current Weather</h6>
-                <div id="weatherHolder">
-                    <span id="zipHolder">{{this.zip}}</span>
+                <div class="card-panel" id="weatherHolder">
+                    <span>Today's Weather: {{this.desc}}</span>
+                    <br>
+                    <span>Current Temp: {{this.temp}}</span>
+                    <br>
+                    <span>Today's Low: {{this.minTemp}}</span>
+                    <br>
+                    <span>Today's High: {{this.maxTemp}}</span> 
                 </div>
             </div>
         </div>
@@ -40,51 +57,9 @@
 </main>
 
 <script>
-    $(document).ready(function(){
-      $('.slider').slider();
-     // var mapURL = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCE2UJNeuqy6Tvi8dkBLXTdSMq4YLQi-y4&callback=initMap";
-   
-        //$.ajax({
-          //  url: mapURL,
-            //method: "GET",
-        //}).then(function(response) {
-          //  console.log("MAPS RES");
-            //console.log(response);
-        // });
-    $("#zipHolder").hide();
-
-    //$.ajax({
-      //  url: "/topSpots",
-        // method: GET,
-       // dataType: "JSON"
-    // }).then(function(data){
-        // console.log(data);
-        // var zipObj = {
-           // zip: data.zip
-           // console.log(data.zip)
-       // };
-  //  });
-    
-    var apiKey = "appid=9b645d08bdee68ac9c3cf483c0d243d5";
-
-    //var zip = 
-
-    var weatherQuery = "https://api.openweathermap.org/data/2.5/weather?zip=90015,us&"+apiKey;
-
-    $.ajax({
-        url: weatherQuery,
-        method: "GET",
-        dataTypes: "json"
-    }).then(function(response){
-        console.log(response);
-        console.log(response.main.temp);
-        var currentTemp = response.main.temp;
-        var minTemp = response.main.temp_min;
-        var maxTemp = response.main.temp_max;
-        $("#weatherHolder").append("<span>'Current Temp = '"+currentTemp+"</span>"+"<br>");
-        $("#weatherHolder").append("<span>'Todays High= '"+maxTemp+"</span>"+"<br>");
-        $("#weatherHolder").append("<span>'Today's Low= '"+minTemp+"</span>"+"<br>");
-    });
+    $(document).ready(function () {
+        
+        $('.slider').slider();
 
     });
 </script>
