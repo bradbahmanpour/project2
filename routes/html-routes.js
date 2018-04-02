@@ -21,8 +21,8 @@ app.get("/classes", function (req, res) {
   res.sendFile(path.join(__dirname, "../public/classes.html"));
 });
 
-  app.get("/cms", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/cms.html"));
+  app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "../views/parallax-template/cms.html"));
   });
 
   // blog route loads blog.html
