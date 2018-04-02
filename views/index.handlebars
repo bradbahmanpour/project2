@@ -29,6 +29,12 @@
                 <div id="map">
                 </div>
             </div>
+            <div class="col s6">
+                <h6>Current Weather</h6>
+                <div id="weatherHolder">
+                    <span id="zipHolder">{{this.zip}}</span>
+                </div>
+            </div>
         </div>
     </div>
 </main>
@@ -36,15 +42,49 @@
 <script>
     $(document).ready(function(){
       $('.slider').slider();
-      var mapURL = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCE2UJNeuqy6Tvi8dkBLXTdSMq4YLQi-y4&callback=initMap";
+     // var mapURL = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCE2UJNeuqy6Tvi8dkBLXTdSMq4YLQi-y4&callback=initMap";
    
-        //get top 15 songs by artist
-        $.ajax({
-            url: mapURL,
-            method: "GET",
-        }).then(function(response) {
-            console.log("MAPS RES");
-            console.log(response);
-        });
+        //$.ajax({
+          //  url: mapURL,
+            //method: "GET",
+        //}).then(function(response) {
+          //  console.log("MAPS RES");
+            //console.log(response);
+        // });
+    $("#zipHolder").hide();
+
+    //$.ajax({
+      //  url: "/topSpots",
+        // method: GET,
+       // dataType: "JSON"
+    // }).then(function(data){
+        // console.log(data);
+        // var zipObj = {
+           // zip: data.zip
+           // console.log(data.zip)
+       // };
+  //  });
+    
+    var apiKey = "appid=9b645d08bdee68ac9c3cf483c0d243d5";
+
+    //var zip = 
+
+    var weatherQuery = "https://api.openweathermap.org/data/2.5/weather?zip=90015,us&"+apiKey;
+
+    $.ajax({
+        url: weatherQuery,
+        method: "GET",
+        dataTypes: "json"
+    }).then(function(response){
+        console.log(response);
+        console.log(response.main.temp);
+        var currentTemp = response.main.temp;
+        var minTemp = response.main.temp_min;
+        var maxTemp = response.main.temp_max;
+        $("#weatherHolder").append("<span>'Current Temp = '"+currentTemp+"</span>"+"<br>");
+        $("#weatherHolder").append("<span>'Todays High= '"+maxTemp+"</span>"+"<br>");
+        $("#weatherHolder").append("<span>'Today's Low= '"+minTemp+"</span>"+"<br>");
+    });
+
     });
 </script>

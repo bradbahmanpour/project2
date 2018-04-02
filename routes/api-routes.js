@@ -11,13 +11,15 @@ module.exports = function(app) {
             var imageArr = data.images.split(",");
             var spotObj = { spot: data.spot,
                             images: imageArr,
-                            body: data.body
+                            body: data.body,
+                            zip: data.zip
                         };    
                         // console.log(imageArr);        
             var hbsObject = {
                 topSpots: spotObj
               };
             res.render("index", spotObj);
+            // res.json(spotObj);
         });
 });
 };

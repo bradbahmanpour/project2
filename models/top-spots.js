@@ -13,6 +13,9 @@ var topSpot = sequelize.define("topSpot", {
     },
     body: {type: DataTypes.TEXT,
     allowNull: false
+    },
+    zip: {type: DataTypes.INTEGER,
+      allowNull: false,
     }
 }, {
   timestamps: false
