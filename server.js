@@ -25,7 +25,6 @@ app.use(bodyParser.json());
 // Static directory
 app.use(express.static("public"));
 
-npm 
 var exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
