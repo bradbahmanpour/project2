@@ -1,6 +1,85 @@
-button.submit {
-  float: right;
+body {
+  background-color: #0bafaf;
 }
+.nav-wrapper {
+ background-color: blue;
+ 
+}
+.brand-logo {
+ color: white
+}
+
+nav ul a,
+nav .brand-logo {
+ background-color: blue;
+ color: white;
+}
+#download-button {
+ background-color:#0bafaf
+}
+.btn-large waves-effect waves-light lighten-1 {
+ background-color: #0bafaf;
+}
+
+p {
+ line-height: 2rem;
+}
+
+.sidenav-trigger {
+ color: #0bafaf;
+}
+.center {
+ color: white;
+}
+
+
+.parallax-container {
+ min-height: 380px;
+ line-height: 0;
+ height: auto;
+ color: black;
+}
+ .parallax-container .section {
+   width: 100%;
+ }
+
+ 
+ 
+
+@media only screen and (max-width : 992px) {
+ .parallax-container .section {
+   position: absolute;
+   top: 40%;
+ }
+ #index-banner .section {
+   top: 10%;
+   color: white;
+ }
+}
+
+@media only screen and (max-width : 600px) {
+ #index-banner .section {
+   top: 0;
+ }
+}
+
+
+
+.col s12 m4 {
+ width: 300px;
+   border: 25px solid green;
+   padding: 25px;
+   margin: 25px;
+}
+
+footer.page-footer {
+ margin: 0;
+ background-color: #0bafaf; 
+}
+
+
+
+
 
 form#cms {
   margin-top: 50px;
@@ -24,7 +103,7 @@ button.edit {
   background-color: #0bafaf;
 }
 .nav-wrapper {
- background-color:#ff0000c5;
+ background-color: blue;
  
 }
 .brand-logo {

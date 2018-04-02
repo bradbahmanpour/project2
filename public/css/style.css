@@ -1,0 +1,99 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ body {
+   background-color: #96ddda;
+ }
+.nav-wrapper {
+  background-color:#061e70ec;
+  
+}
+.brand-logo {
+  color: white
+}
+#index-banner {
+  color: white;
+  
+}
+nav ul a,
+nav .brand-logo {
+  color: white
+}
+#download-button {
+  background-color:#0bafaf
+}
+.btn-large waves-effect waves-light lighten-1 {
+  background-color: #0bafaf;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #0bafaf;
+}
+.center {
+  color: white;
+}
+#Dive {
+  width: 150px;
+  height: 150px;
+  
+  position:relative;
+
+}
+
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: black;
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+.card {
+  background-color:#061e70ec;
+  color: white;
+}
+
+  
+  
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+
+
+.col s12 m4 {
+  width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+
+footer.page-footer {
+  margin: 0;
+  background-color:#061e70ec; 
+}
