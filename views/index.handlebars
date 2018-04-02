@@ -1,6 +1,10 @@
-<h1>Top Dive Spots in Los Angeles</h1>
 <main>
-    <div class="container">
+    <div class="paralax-container">
+        <div class="row">
+            <div class="col s12">
+                <h1 id="h1">Brad's Top Dive Sites!</h1>
+            </div>
+        </div>
         <div class="row">
             <div class="col s6">
                 <h2>{{this.spot}}</h2>
@@ -12,15 +16,40 @@
                     <ul class="slides">
                         {{#each this.images}}
                         <li>
-                            <img src = {{this}}> 
+                            <img src={{this}}>
                         </li>
                         {{/each}}
                     </ul>
                 </div>
             </div>
             <div class="col s6">
-                <div class="card-panel">
+                <div class="card-panel" id="textBox">
                     {{this.body}}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <h4 id="mapHead">Get there!</h4>
+            </div>
+            <div class="col s 6">
+                <h4 id="weatherCon">Weather Conditions</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <div id="map">
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="card-panel" id="weatherHolder">
+                    <span>Today's Weather: {{this.desc}}</span>
+                    <br>
+                    <span>Current Temp: {{this.temp}}</span>
+                    <br>
+                    <span>Today's Low: {{this.minTemp}}</span>
+                    <br>
+                    <span>Today's High: {{this.maxTemp}}</span> 
                 </div>
             </div>
         </div>
@@ -28,7 +57,9 @@
 </main>
 
 <script>
-    $(document).ready(function(){
-      $('.slider').slider();
+    $(document).ready(function () {
+        
+        $('.slider').slider();
+
     });
 </script>

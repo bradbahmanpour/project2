@@ -1,0 +1,63 @@
+.paralax-container {
+    height:100% !important;
+    width:100% !important;
+}
+
+.paralax {
+    height:100% !important;
+    width:100% !important;
+}
+
+html body {
+    background-image: url("/images/background1.jpg");
+    font-family: 'Courgette', cursive;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#map {
+    height: 100%;      
+}
+
+
+#h1 {
+    font-size: 40px;
+    color: #ECEBE4;
+    font-weight: 900;
+
+}
+
+h2 {
+    font-size: 36px;
+    color: #ECEBE4;
+    font-weight: 900;
+
+}
+
+h4 {
+    font-size: 30px;
+    color: #77878B;
+    font-weight: 900;
+
+}
+
+#weatherHolder {
+    background-color: #2C6AA8;
+    color: #ECEBE4;
+    font-size: 24px;
+}
+
+.card-panel {
+    height: 96%;
+    width: auto;
+    
+}
+
+.indicator-item {
+    margin-top: 10px;
+}
+
+#textBox{
+    background-color: #2C6AA8;
+    color: #ECEBE4;
+}
