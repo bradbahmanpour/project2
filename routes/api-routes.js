@@ -65,8 +65,10 @@ module.exports = function (app) {
 
     app.get("/topSpots/:id", function (req, res) {
         // console.log("topSpots route triggered")
-        db.topSpot.findOne({
-                id: req.params.id
+        db.topSpot.findOne({ 
+            where: {
+                id: req.params.id 
+            }  
             })
             .then(function (data) {
                 // console.log(data);
