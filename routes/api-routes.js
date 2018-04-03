@@ -68,6 +68,7 @@ module.exports = function (app) {
         db.topSpot.findOne({
                 id: req.params.id
             })
+
             .then(function (data) {
                 // console.log(data);
                 var imageArr = data.images.split(",");
