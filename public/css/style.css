@@ -13,6 +13,18 @@
   background-color:#061e70ec;
   
 }
+#favorites {
+  background-color:#061e70ec;
+  margin-bottom: 0px;
+  padding: 0px;
+  border: none;
+}
+#classes {
+  background-color:#061e70ec;
+  margin-bottom: 0px;
+  padding: 0px;
+  border: none;
+}
 #feedback {
   width: 300px;
   border: 25px solid green;
