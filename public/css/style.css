@@ -7,11 +7,29 @@
  */
 
  body {
-   background-color: #96ddda;
+   background-color: white;
  }
 .nav-wrapper {
   background-color:#061e70ec;
   
+}
+#favorites {
+  background-color:#061e70ec;
+  margin-bottom: 0px;
+  padding: 0px;
+  border: none;
+}
+#classes {
+  background-color:#061e70ec;
+  margin-bottom: 0px;
+  padding: 0px;
+  border: none;
+}
+#feedback {
+  width: 300px;
+  border: 25px solid green;
+  padding: 25px;
+  margin: 25px;
 }
 .brand-logo {
   color: white
@@ -50,6 +68,7 @@ p {
 }
 
 
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -84,7 +103,12 @@ p {
   }
 }
 
-
+#comment-form {
+  width: 300px;
+  border: 25px solid green;
+  padding: 25px;
+  margin: 25px;
+}
 
 .col s12 m4 {
   width: 300px;

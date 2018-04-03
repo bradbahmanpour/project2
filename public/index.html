@@ -12,10 +12,12 @@
   <link href="css/styles.css" type="text/html" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 </head>
 
 <body>
-  
+
   <ul id="dropdown1" class="dropdown-content">
 
     <li>
@@ -32,32 +34,41 @@
   </ul>
   <nav>
     <div class="nav-wrapper">
-      
-        
-        <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="classes.html">Courses</a>
-            </li>
-            <li>
-              <a href="team.html">Team</a>
-            </li>
-            <li>
-              <a href="gallery.html">Gallery</a>
-            </li>
-            <li>
-                <a href="/">Favorites</a>
-              </li>
- 
 
-        <li>
-          <a class="dropdown-trigger" href="#!" data-target="dropdown1">Explore
-            <i class="material-icons right"></i>
-          </a>
-        </li>
-      </ul>
+        <ul class="left hide-on-med-and-down">
+          <li>Follow Us</li>
+          <li>
+            <a href="https://www.facebook.com/Diving-With-The-Stars-145607685509779/" class="fa fa-facebook"></a>
+            </li>
+            <li></li>
+            <a href="#" class="fa fa-twitter"></a>
+          </li>
+            </ul>
+          
+      
+
+
+            <ul class="right hide-on-med-and-down">
+                <li>
+                  <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/classes.html">Courses</a>
+                </li>
+                <li>
+                  <a href="Team.html">Team</a>
+                </li>
+                <li>
+                  <a href="Photos.html">Media</a>
+                </li>
+            <li>
+                  <form action="/topSpots/1" method="GET"> <a href="#"><button id="favorites"type="submit">Favorites</button></a></form>
+                </li>
+        
+         
+        
+               
+              </ul>
     </div>
 
     <ul id="nav-mobile" class="sidenav">
@@ -74,13 +85,15 @@
       <div class="container">
         <br>
         <br>
-        <div><h1 id="Dive">Dive With The Stars</h1></div>
-    
+        <div>
+          <h1 id="Dive">Dive With The Stars</h1>
+        </div>
+
         <div class="row center">
           <h5 class="header col s12 light"></h5>
         </div>
         <div class="row center">
-         
+
         </div>
         <br>
         <br>
@@ -103,13 +116,12 @@
             <div class="card-image">
               <img src="images/OurTeamScuba.jpg">
               <span class="card-title">Our Team</span>
-              <a class="btn-floating halfway-fab waves-effect waves-light red" onclick="href='destinations.html'">
+              <a class="btn-floating halfway-fab waves-effect waves-light red" onclick="href='team.html'">
                 <i class="material-icons">add</i>
               </a>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                little markup to use effectively.</p>
+              <p></p>
             </div>
           </div>
         </div>
@@ -127,8 +139,7 @@
               </a>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                little markup to use effectively.</p>
+              <p></p>
             </div>
           </div>
         </div>
@@ -140,30 +151,20 @@
               <span class="card-title">Destinations</span>
               <a class="btn-floating halfway-fab waves-effect waves-light red" onclick="href='destinations.html'">
                 <i class="material-icons">add</i>
-                <input type="button" onclick="location.href='destinations.html';" value="Destinations"/>
+                <input type="button" onclick="location.href='destinations.html';" value="Destinations" />
               </a>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                little markup to use effectively.</p>
+              <p></p>
             </div>
           </div>
         </div>
       </div>
 
-<div class="container">
-        <div class="section">
-
-          <div class="row">
-            <div class="col s12 center">
-              <h3>
-                <i class="mdi-content-send brown-text"></i>
-              </h3>
-              <h4>Contact Us</h4>
-              <p class="left-align light"></p>
-            </div>
+      
+              
           </div>
-
+          </div>
         </div>
       </div>
 
@@ -186,20 +187,19 @@
           <div class="row">
             <div class="col l6 s12">
               <h5 class="white-text">Diving With The Stars</h5>
-              <ul>
-                <li>
-                  <a class="white-text">Address: 8020 Zeus Drive, Los Angeles, CA 90046</a>
-                  <a class="white-text">Phone: 310-508-0883</a>
-                </li>
+                  <a class="white-text"><b>Address</b> <p>8020 Zeus Drive, Los Angeles, CA 90046</p></a>
+                  <a class="white-text"><b>Phone</b> <p>310-508-0883</p></a>
+
               </ul>
 
               <p class="grey-text text-lighten-4"></p>
 
             </div>
+           
             <div class="col l3 s12"></div>
 
             <div class="col l3 s12" id=>
-              <h5 class="white-text">Connect</h5>
+              <h5 class="white-text">Resources</h5>
 
               <ul>
                 <li>
@@ -215,6 +215,9 @@
                 </li>
               </ul>
             </div>
+            
+          </div>
+
           </div>
         </div>
 
@@ -233,8 +236,18 @@
         fullWidth: true,
         indicators: true
       });
-      
-    
+      $('#textarea1').val('New Text');
+      $('#textarea1').trigger('autoresize');
+      $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+      var elem = document.querySelector('.carousel');
+      var instance = M.Carousel.init(elem, options);
+
+ 
+        
+
+
     </script>
 
 </body>
