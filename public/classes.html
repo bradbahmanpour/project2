@@ -5,26 +5,16 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Classes</title>
-
-	<!-- js -->
+	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/materialize.js" type="text/javascript"></script>
-
 	<!-- CSS  -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
 	<link href="css/styles.css" type="text/html" rel="stylesheet" media="screen,projection" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
-<style>
-	h1 {
-		font-weight: bold;
-		
-	}
-</style>
 
 <body>
-
 	<ul id="dropdown1" class="dropdown-content">
 
 		<li>
@@ -43,55 +33,54 @@
 		<div class="nav-wrapper">
 
 
-				<ul class="right hide-on-med-and-down">
-						<li>
-						  <a href="/index.html">Home</a>
-						</li>
-						<li>
-						  <a href="/classes.html">Courses</a>
-						</li>
-						<li>
-						  <a href="Team.html">Team</a>
-						</li>
-						<li>
-						  <a href="Photos.html">Media</a>
-						</li>
-						<li>
-						  <form action="/topSpots/1" method="GET"> <a href="#"><button id="favorites"type="submit">Favorites</button></a></form>
-						</li>
-				
-				 
-				
-					   
-					  </ul>
+			<ul class="right hide-on-med-and-down">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="classes.html">Courses</a>
+				</li>
+				<li>
+					<a href="team.html">Team</a>
+				</li>
+				<li>
+					<a href="gallery.html">Gallery</a>
+				</li>
+
+
+
+				<li>
+					<a class="dropdown-trigger" href="#!" data-target="dropdown1">Explore
+						<i class="material-icons right"></i>
+					</a>
+				</li>
+			</ul>
 		</div>
 
 
 	</nav>
-	
-	
+
 
 
 
 
 	<div class="container">
-		<h1>Courses and Certifications</h1>
-
-
 		<div class="section">
 
 			<div class="row">
 				<div class="col s12 m4">
-					<div class="card">
-						<div class="card-image">
-							<img src="images/diverup.jpg">
-							<span class="card-title">Class1</span>
-							<a class="btn-floating halfway-fab waves-effect waves-light red" onclick="href='destinations.html'">
-								<i class="material-icons">add</i>
-							</a>
-						</div>
-						<div class="card-content">
-							<p></p>
+						<div class="card">
+							<div class="card-image">
+								<img src="images/diverup.jpg">
+								<span class="card-title">Class1</span>
+								<a class="btn-floating halfway-fab waves-effect waves-light red" id="class1">
+									<i class="material-icons">add</i>
+								</a>
+							</div>
+							<div class="card-content">
+								<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little
+									markup to use effectively.</p>
+							</div>
 						</div>
 				</div>
 				<!-- 
@@ -108,7 +97,8 @@
 							</a>
 						</div>
 						<div class="card-content">
-							<p></p>
+							<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little
+								markup to use effectively.</p>
 						</div>
 					</div>
 				</div>
@@ -124,7 +114,8 @@
 							</a>
 						</div>
 						<div class="card-content">
-							<p></p>
+							<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little
+								markup to use effectively.</p>
 						</div>
 					</div>
 				</div>
@@ -143,7 +134,8 @@
 							</a>
 						</div>
 						<div class="card-content">
-							<p></p>
+							<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little
+								markup to use effectively.</p>
 						</div>
 					</div>
 				</div>
@@ -161,7 +153,8 @@
 							</a>
 						</div>
 						<div class="card-content">
-							<p></p>
+							<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little
+								markup to use effectively.</p>
 						</div>
 					</div>
 				</div>
@@ -177,7 +170,8 @@
 							</a>
 						</div>
 						<div class="card-content">
-							<p></p>
+							<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little
+								markup to use effectively.</p>
 						</div>
 					</div>
 				</div>
@@ -202,7 +196,7 @@
 		$('.modal').modal();
 		$('#modal1').hide();
 		
-		$("#class1").onClick(function(){
+		$("#class1").onclick(function(){
 			show();
 		})
     });
