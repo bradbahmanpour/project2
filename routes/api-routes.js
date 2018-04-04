@@ -92,11 +92,23 @@ module.exports = function (app) {
                 var weatherQuery = "https://api.openweathermap.org/data/2.5/weather?zip=" + zip + ",us&" + apiKey;
                 request(weatherQuery, function (error, response, body) {
                     if (!error && response.statusCode === 200) {
-                        // console.log(JSON.parse(body));
+                        console.log(JSON.parse(body));
                         spotObj.desc = JSON.parse(body).weather[0].main;
-                        spotObj.temp = JSON.parse(body).main.temp;
-                        spotObj.maxTemp = JSON.parse(body).main.temp_max;
-                        spotObj.minTemp = JSON.parse(body).main.temp_min;
+                        
+                       var degrees = parseInt(JSON.parse(body).main.temp);
+                       degrees= ((degrees * 9) / 5 )- 459.67;
+                       degrees = degrees.toFixed(0);
+                       spotObj.temp = degrees;
+
+                       var degrees1 = parseInt(JSON.parse(body).main.temp_min);
+                       degrees1= ((degrees1 * 9) / 5 )- 459.67;
+                       degrees1 = degrees1.toFixed(0);
+                       spotObj.temp_min = degrees1;
+
+                       var degrees2 = parseInt(JSON.parse(body).main.temp_max);
+                       degrees2= ((degrees2 * 9) / 5 )- 459.67;
+                       degrees2 = degrees2.toFixed(0);
+                       spotObj.temp_max = degrees2;
 
                         res.render("index", spotObj);
                     }

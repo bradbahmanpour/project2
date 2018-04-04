@@ -41,7 +41,7 @@ h4 {
 
 #weatherHolder {
     font-family: 'Courgette', cursive;
-    background-color: #77878B;
+    background-color: #2292A4;
     color: #042A2B;
     font-size: 24px;
     width: auto;
@@ -62,7 +62,7 @@ h4 {
 
 #textBox{
     font-family: 'Courgette', cursive;
-    background-color: #77878B;
+    background-color: #2292A4;
     color: #042A2B;
     width: auto;
     height: auto;
@@ -77,9 +77,9 @@ h4 {
 #nextBut{
     padding: 10px;
     float: right;
-    background-color: #2292A4;
+    background-color: #77878B;
     color: #042A2B;
-    border: solid 5px #77878B;
+    border: solid 5px #2292A4;
     margin-top: 20px;
     font-family: 'Courgette', cursive;
 
@@ -88,9 +88,9 @@ h4 {
 #prevBut {
     padding: 10px;
     float: left;
-    background-color: #2292A4;
+    background-color: #77878B;
     color: #042A2B;
-    border: solid 5px #77878B;
+    border: solid 5px #2292A4;
     margin-top: 20px;
     font-family: 'Courgette', cursive;
     font-weight: bolder;
