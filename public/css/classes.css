@@ -1,11 +1,11 @@
 .container .section {
     height:100% !important;
     width:100% !important;
-    background-color: #ECEBE4;
+    background-color: white;
 }
 
 body {
-    background-color: #ECEBE4 !important;
+    background-color: white !important;
 }
 
 #classInfo {
