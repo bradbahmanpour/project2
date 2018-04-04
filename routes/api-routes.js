@@ -74,13 +74,14 @@ module.exports = function (app) {
             .then(function (data) {
                 // console.log(data);
                 var imageArr = data.images.split(",");
+                console.log(imageArr);
                 var spotObj = {
                     spot: data.spot,
                     images: imageArr,
                     body: data.body,
                     zip: data.zip
                 };
-                // console.log(imageArr);        
+                        
                 var hbsObject = {
                     topSpots: spotObj
                 };
