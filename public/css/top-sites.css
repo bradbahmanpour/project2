@@ -9,7 +9,7 @@
 }
 
 html body {
-    background-image: url("/images/background1.jpg");
+    /* background-image: url("/images/background1.jpg"); */
     /* font-family: 'Courgette', cursive; */
     background-size: cover;
     background-repeat: no-repeat;

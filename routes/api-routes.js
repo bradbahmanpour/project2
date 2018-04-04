@@ -114,7 +114,7 @@ module.exports = function (app) {
             }  
             })
             .then(function (data) {
-                // console.log(data);
+                console.log(data);
                 var classObj = {
                     name: data.className,
                     desc: data.classDescription,
@@ -122,7 +122,6 @@ module.exports = function (app) {
                     prereq: data.classPrerequisit,
                     price: data.classPrice
                 }
-                // console.log(classObj);
                 res.render("classes", classObj);
                 });                 
             });

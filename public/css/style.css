@@ -7,7 +7,10 @@
  */
 
  body {
-   background-color: white;
+  background-image: url("/images/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: 
  }
 .nav-wrapper {
   background-color:#061e70ec;
