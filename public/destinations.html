@@ -130,7 +130,7 @@
                   <a class="white-text"><b>Address</b> <p>8020 Zeus Drive, Los Angeles, CA 90046</p></a>
                   <a class="white-text"><b>Phone</b> <p>310-508-0883</p></a>
 
-              </ul>
+              
 
               <p class="grey-text text-lighten-4"></p>
 
@@ -170,7 +170,8 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script>
-
+        var elem = document.querySelector('.carousel');
+      var instance = M.Carousel.init(elem, options);
       $(".dropdown-trigger").dropdown();
       $('.carousel.carousel-slider').carousel({
         fullWidth: true,
@@ -181,9 +182,8 @@
       $(document).ready(function(){
     $('.carousel').carousel();
   });
-      var elem = document.querySelector('.carousel');
-      var instance = M.Carousel.init(elem, options);
 
+     
  
         
 
