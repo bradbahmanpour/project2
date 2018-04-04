@@ -42,7 +42,7 @@ h2 {
 h4 {
     font-family: 'Courgette', cursive;
     font-size: 30px;
-    color: #77878B;
+    color: white;
     font-weight: 900;
 
 }
@@ -52,6 +52,8 @@ h4 {
     background-color: #2C6AA8;
     color: #ECEBE4;
     font-size: 24px;
+    width: 600px;
+    height: 400px;
 }
 
 .card-panel {
@@ -70,6 +72,8 @@ h4 {
     font-family: 'Courgette', cursive;
     background-color: #2C6AA8;
     color: #ECEBE4;
+    width: 600px;
+    height: 200px;
 }
 
 .nav-wrapper {

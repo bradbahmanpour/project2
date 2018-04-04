@@ -1,66 +1,68 @@
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Diving with the Stars!</title>
-	{{!-- jquery --}}
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- Compiled and minified CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	<!-- Compiled and minified JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  {{!-- fonts --}}
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-	<!-- CSS  -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	
-	<link rel="stylesheet" href="/css/top-sites.css">
-	<link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-	<link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-	
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diving with the Stars!</title>
+  {{!-- jquery --}}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> {{!-- fonts --}}
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/top-sites.css">
+  <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  
+
 </head>
 
 <body>
-	 <nav>
+  <nav>
     <div class="nav-wrapper">
-      
-        
+
+       <ul class="left hide-on-med-and-down">
+          <li>Follow Us</li>
+          <li>
+            <a href="https://www.facebook.com/Diving-With-The-Stars-145607685509779/" class="fa fa-facebook"></a>
+            </li>
+            <li></li>
+            <a href="#" class="fa fa-twitter"></a>
+          </li>
+            </ul>
+
+
       <ul class="right hide-on-med-and-down">
-        <li>
-          <a href="/index.html">Home</a>
-        </li>
-        <li>
-          <a href="/classes.html">Courses</a>
-        </li>
-        <li>
-          <a href="Team.html">Team</a>
-        </li>
-        <li>
-          <a href="Photos.html">Media</a>
-        </li>
-		<li>
-          <form action="/topSpots/1" method="GET"> <a href="#"><button id="favorites"type="submit">Favorites</button></a></form>
-        </li>
-
- 
-
-       
-      </ul>
+         <li>
+                  <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/classes.html">Courses</a>
+                </li>
+                <li>
+                  <a href="/destinations.html">Sites</a>
+                </li>
+                <li>
+                  <a href="/contact.html">Contact Us</a>
+                </li>
+            <li>
+                  <form action="/topSpots/1" method="GET"> <a href="#"><button id="favorites"type="submit">Favorites</button></a></form>
+                </li>
+          </ul>
     </div>
-
-    <ul id="nav-mobile" class="sidenav">
-
-    </ul>
-    
-    </div>
+        </div>
   </nav>
-	
-	
-		{{{ body }}}
-		
-		
+  
+
+
+  {{{ body }}}
+
+
 </body>
 
 </html>

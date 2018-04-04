@@ -25,6 +25,14 @@
   padding: 0px;
   border: none;
 }
+#destinations {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+}
+
 #feedback {
   width: 300px;
   border: 25px solid green;

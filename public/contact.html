@@ -68,7 +68,7 @@
         <br>
         <br>
         <div>
-          <h1 id="Dive">Dive Sites</h1>
+          <h1 id="Dive">Contact Us Today</h1>
         </div>
 
         <div class="row center">
@@ -86,28 +86,45 @@
       <img class="responsive-img" src="images/scubadiver1.jpg" alt="Unsplashed background img 1">
     </div>
   </div>
-
-
  
+         <div class="container">
+        <div class="section">
+ 
+                <div class="row">
+                        <form class="col s12">
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <input id="first_name" type="text" class="validate">
+                              <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                              <input id="last_name" type="text" class="validate">
+                              <label for="last_name">Last Name</label>
+                            </div>
+                          </div>
+                            <div class="row">
+                            <div class="input-field col s12">
+                              <input id="email" type="email" class="validate">
+                              <label for="email">Email</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                                <div class="input-field col s12">
+                                  <input id="comments" type="text" class="validate">
+                                  <label for="comments">Comments</label>
+                                </div>
+                              </div>
+                          
+                          </div>
+                        </form>
 
-      <!--   Icon Section   -->
-      <div class="container">
-            <div class="section">
-                    <div class="row">
-                            <div class="col m12 s12">
-                    <div id="destinations">
-                            <iframe width="976.5px" height="824px" src="http://www.divesites.com" style="-webkit-transform:scale(0.5);-moz-transform-scale(0.5);"></iframe>
-                </div>
-            </div>
-    
-
-      
-              
-          </div>
-          </div>
-        </div>
-      </div>
-
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                <i class="material-icons right">send</i>
+                              </button>
+                                    
+                      </div>
+                      </div>
+                      </div>
 
       <div class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
@@ -130,7 +147,7 @@
                   <a class="white-text"><b>Address</b> <p>8020 Zeus Drive, Los Angeles, CA 90046</p></a>
                   <a class="white-text"><b>Phone</b> <p>310-508-0883</p></a>
 
-              
+              </ul>
 
               <p class="grey-text text-lighten-4"></p>
 
@@ -170,8 +187,7 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script>
-        var elem = document.querySelector('.carousel');
-      var instance = M.Carousel.init(elem, options);
+
       $(".dropdown-trigger").dropdown();
       $('.carousel.carousel-slider').carousel({
         fullWidth: true,
@@ -182,8 +198,9 @@
       $(document).ready(function(){
     $('.carousel').carousel();
   });
+      var elem = document.querySelector('.carousel');
+      var instance = M.Carousel.init(elem, options);
 
-     
  
         
 
