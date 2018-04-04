@@ -1,19 +1,20 @@
 <main>
-   <div class=“paralax-container”>
-       <div class=“row”>
-           <div class=“col s12”>
-               <h1 id=“h1">Brad’s Top Dive Sites!</h1>
+    <center>
+   <div class="paralax-conatiner">
+       <div class="row">
+           <div class="col s12">
+               <h1 id="h1">Brad’s Top Dive Sites!</h1>
            </div>
        </div>
-       <div class=“row”>
-           <div class=“col s6">
+       <div class="row">
+           <div class="col s12">
                <h2>{{this.spot}}</h2>
            </div>
        </div>
-       <div class=“row”>
-           <div class=“col s6">
-               <div class=“slider”>
-                   <ul class=“slides”>
+       <div class="row">
+           <div class="col s12">
+               <div class="slider" style="height:100% !important;">
+                   <ul class="slides" style="height:100% !important;">
                        {{#each this.images}}
                        <li>
                            <img src={{this}}>
@@ -22,27 +23,22 @@
                    </ul>
                </div>
            </div>
-           <div class=“col s6”>
-               <div class=“card-panel” id=“textBox”>
+           </div>
+           <div class="row">
+           <div class="col s12">
+               <div class="card-panel" id="textBox">
                    {{this.body}}
                </div>
            </div>
        </div>
-       <div class=“row”>
-           <div class=“col s6”>
-               <h4 id=“mapHead”>Get there!</h4>
-           </div>
-           <div class=“col s 6”>
-               <h4 id=“weatherCon”>Weather Conditions</h4>
+       <div class="row">
+           <div class="col s12">
+               <h4 id="weatherCon">Weather Conditions</h4>
            </div>
        </div>
-       <div class=“row”>
-           <div class=“col s6">
-               <div id=“map”>
-               </div>
-           </div>
-           <div class=“col s6">
-               <div class=“card-panel” id=“weatherHolder”>
+       <div class="row">
+           <div class="col s12">
+               <div class="card-panel" id="weatherHolder">
                    <span>Today’s Weather: {{this.desc}}</span>
                    <br>
                    <br>
@@ -55,45 +51,38 @@
                    <span>Today’s High: {{this.maxTemp}}</span>
                </div>
            </div>
-       </div>
-       <div class=“row”>
-           <div class=“col s6">
-               <button id=“prevBut”>Previous Spot</button>
            </div>
-           <div class=“col s6">
-               <button id=“nextBut”>Next Spot</button>
+       <div class="row">
+           <div class= "col s6">
+               <button id="prevBut">Previous Spot</button>
+           </div>
+           <div class="col s6">
+               <button id="nextBut">Next Spot</button>
            </div>
        </div>
-   </div>
+   </div> 
+   </center>
 </main>
 
 <script>
    $(document).ready(function () {
-       $(‘.slider’).slider();
-       $(‘.parallax’).parallax();
-       var temp = window.location.pathname.split(“/”)
-       if (temp[2] === “1”) {
-           $(“#prevBut”).hide()
+       $('.slider').slider();
+       $('.parallax').parallax();
+       var temp = window.location.pathname.split("/")
+       if (temp[2] === "1") {
+           $("#prevBut").hide()
        }
 
 
-      $(“#nextBut”).click(function(){
+      $("#nextBut").click(function(){
           var newID = parseInt(temp[2]) + 1;
-          window.location.href = “/topSpots/” + newID;
+          window.location.href = "/topSpots/" + newID;
       })
 
-      $(“#prevBut”).click(function(){
+      $("#prevBut").click(function(){
           var newID = parseInt(temp[2]) - 1;
-          window.location.href = “/topSpots/” + newID;
+          window.location.href = "/topSpots/" + newID;
       })
-
-
    });
 
 </script>
-
-Message Input
-
-Message @MikeHeiser
-
-*bold* _italics_ ~strike~ `code` ```preformatted``` >quote
