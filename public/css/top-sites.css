@@ -2,12 +2,12 @@
     height:100% !important;
     width:100% !important;
 }
-
+/* 
 html body {
     background-image: url("/images/background1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
 .slider .slides li img {
     height: 100% !important;

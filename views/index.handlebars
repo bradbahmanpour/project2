@@ -1,88 +1,167 @@
-<main>
-    <center>
-   <div class="paralax-conatiner">
-       <div class="row">
-           <div class="col s12">
-               <h1 id="h1">Brad’s Top Dive Sites!</h1>
-           </div>
-       </div>
-       <div class="row">
-           <div class="col s12">
-               <h2>{{this.spot}}</h2>
-           </div>
-       </div>
-       <div class="row">
-           <div class="col s12">
-               <div class="slider" style="height:100% !important;">
-                   <ul class="slides" style="height:100% !important;">
-                       {{#each this.images}}
-                       <li>
-                           <img src={{this}}>
-                       </li>
-                       {{/each}}
-                   </ul>
-               </div>
-           </div>
-           </div>
-           <div class="row">
-           <div class="col s12">
-               <div class="card-panel" id="textBox">
-                   {{this.body}}
-               </div>
-           </div>
-       </div>
-       <div class="row">
-           <div class="col s12">
-               <h4 id="weatherCon">Weather Conditions</h4>
-           </div>
-       </div>
-       <div class="row">
-           <div class="col s12">
-               <div class="card-panel" id="weatherHolder">
-                   <span>Today’s Weather: {{this.desc}}</span>
-                   <br>
-                   <br>
-                   <span>Current Temp: {{this.temp}}</span>
-                   <br>
-                   <br>
-                   <span>Today’s Low: {{this.minTemp}}</span>
-                   <br>
-                   <br>
-                   <span>Today’s High: {{this.maxTemp}}</span>
-               </div>
-           </div>
-           </div>
-       <div class="row">
-           <div class= "col s6">
-               <button id="prevBut">Previous Spot</button>
-           </div>
-           <div class="col s6">
-               <button id="nextBut">Next Spot</button>
-           </div>
-       </div>
-   </div> 
-   </center>
-</main>
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <br>
+            <br>
+            <div>
+                <h1 id="Dive">Brad's Top Dive Spots</h1>
+            </div>
+
+            <div class="row center">
+                <h5 class="header col s12 light"></h5>
+            </div>
+            <div class="row center">
+
+            </div>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <div class="parallax">
+        <img class="responsive-img" src="/images/scubadiver1.jpg" alt="Unsplashed background img 1">
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12">
+                <h2>{{this.spot}}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="slider" style="height:100% !important;">
+                    <ul class="slides" style="height:100% !important;">
+                        {{#each this.images}}
+                        <li>
+                            <img src={{this}}>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4 id="weatherCon">Weather Conditions</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <div class="card-panel" id="weatherHolder">
+                    <span>Today’s Weather: {{this.desc}}</span>
+                    <br>
+                    <br>
+                    <span>Current Temp: {{this.temp}}</span>
+                    <br>
+                    <br>
+                    <span>Today’s Low: {{this.minTemp}}</span>
+                    <br>
+                    <br>
+                    <span>Today’s High: {{this.maxTemp}}</span>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="card-panel" id="textBox">
+                    {{this.body}}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <button id="prevBut">Previous Spot</button>
+            </div>
+            <div class="col s6">
+                <button id="nextBut">Next Spot</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Diving With The Stars</h5>
+                <a class="white-text">
+                    <b>Address</b>
+                    <p>8020 Zeus Drive, Los Angeles, CA 90046</p>
+                </a>
+                <a class="white-text">
+                    <b>Phone</b>
+                    <p>310-508-0883</p>
+                </a>
+
+                </ul>
+
+                <p class="grey-text text-lighten-4"></p>
+
+            </div>
+
+            <div class="col l3 s12"></div>
+
+            <div class="col l3 s12" id=>
+                <h5 class="white-text">Resources</h5>
+
+                <ul>
+                    <li>
+                        <a class="white-text" href=https://www.padi.com/sites/default/files/documents/padi-courses/2.6.02%20tec%20diving%20safe%20diving%20practices.pdf>PADI Safe Practices</a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="https://www.padi.com/sites/default/files/documents/padi-courses/2.1.5%20rstc%20medstate%20v201.pdf">PADI Medical Questionnaire</a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="https://www.padi.com/sites/default/files/documents/2018-02/10648_DSDRelease_Medical_v1.pdf">PADI Participation Guide</a>
+                    </li>
+
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+</footer>
 
 <script>
-   $(document).ready(function () {
-       $('.slider').slider();
-       $('.parallax').parallax();
-       var temp = window.location.pathname.split("/")
-       if (temp[2] === "1") {
-           $("#prevBut").hide()
-       }
 
 
-      $("#nextBut").click(function(){
-          var newID = parseInt(temp[2]) + 1;
-          window.location.href = "/topSpots/" + newID;
-      })
+    $(document).ready(function () {
+        $('.slider').slider();
+        $('.parallax').parallax();
+        var temp = window.location.pathname.split("/")
+        if (temp[2] === "1") {
+            $("#prevBut").hide()
+        }
 
-      $("#prevBut").click(function(){
-          var newID = parseInt(temp[2]) - 1;
-          window.location.href = "/topSpots/" + newID;
-      })
-   });
+
+        $("#nextBut").click(function () {
+            var newID = parseInt(temp[2]) + 1;
+            window.location.href = "/topSpots/" + newID;
+        })
+
+        $("#prevBut").click(function () {
+            var newID = parseInt(temp[2]) - 1;
+            window.location.href = "/topSpots/" + newID;
+        })
+    });
+
+    $(".dropdown-trigger").dropdown();
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+    });
+    $('#textarea1').val('New Text');
+    $('#textarea1').trigger('autoresize');
+    $(document).ready(function () {
+        $('.carousel').carousel();
+    });
 
 </script>
