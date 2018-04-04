@@ -1,13 +1,12 @@
-.container {
+.container .section {
     height:100% !important;
     width:100% !important;
+    background-color: #ECEBE4;
 }
-/* 
-html body {
-    background-image: url("/images/background1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
+
+body {
+    background-color: #ECEBE4 !important;
+}
 
 .slider .slides li img {
     height: 100% !important;
@@ -20,7 +19,7 @@ html body {
 #h1 {
     font-family: 'Courgette', cursive;
     font-size: 40px;
-    color: #ECEBE4;
+    color: #042A2B;
     font-weight: 900;
     float: left;
 }
@@ -28,14 +27,14 @@ html body {
 h2 {
     font-family: 'Courgette', cursive;
     font-size: 36px;
-    color: #ECEBE4;
+    color: #042A2B;
     font-weight: 900;
 }
 
 h4 {
     font-family: 'Courgette', cursive;
     font-size: 30px;
-    color: white;
+    color: #042A2B;
     font-weight: 900;
 
 }
@@ -43,7 +42,7 @@ h4 {
 #weatherHolder {
     font-family: 'Courgette', cursive;
     background-color: #77878B;
-    color: #ECEBE4;
+    color: #042A2B;
     font-size: 24px;
     width: auto;
     height: auto;
@@ -64,7 +63,7 @@ h4 {
 #textBox{
     font-family: 'Courgette', cursive;
     background-color: #77878B;
-    color: #ECEBE4;
+    color: #042A2B;
     width: auto;
     height: auto;
 }
@@ -73,4 +72,26 @@ h4 {
     background-color: #2C6AA8;
     color: #ECEBE4;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#nextBut{
+    padding: 10px;
+    float: right;
+    background-color: #2292A4;
+    color: #042A2B;
+    border: solid 5px #77878B;
+    margin-top: 20px;
+    font-family: 'Courgette', cursive;
+
+}
+
+#prevBut {
+    padding: 10px;
+    float: left;
+    background-color: #2292A4;
+    color: #042A2B;
+    border: solid 5px #77878B;
+    margin-top: 20px;
+    font-family: 'Courgette', cursive;
+    font-weight: bolder;
 }

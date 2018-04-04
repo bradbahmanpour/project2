@@ -1,0 +1,39 @@
+.container .section {
+    height:100% !important;
+    width:100% !important;
+    background-color: #ECEBE4;
+}
+
+body {
+    background-color: #ECEBE4 !important;
+}
+
+#classInfo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 30px;
+    color: #042A2B;
+    font-family: 'Courgette', cursive;
+}
+
+#nextBut{
+    padding: 10px;
+    float: right;
+    background-color: #2292A4;
+    color: #042A2B;
+    border: solid 5px #77878B;
+    margin-top: 20px;
+    font-family: 'Courgette', cursive;
+
+}
+
+#prevBut {
+    padding: 10px;
+    float: left;
+    background-color: #2292A4;
+    color: #042A2B;
+    border: solid 5px #77878B;
+    margin-top: 20px;
+    font-family: 'Courgette', cursive;
+    font-weight: bolder;
+}
