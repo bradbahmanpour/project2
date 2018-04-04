@@ -105,4 +105,24 @@ module.exports = function (app) {
 
             });
     });
-};
+
+app.get('/classes/:id', function (req, res) {
+    // console.log(“topSpots route triggered”)
+    db.classes.findOne({ 
+        where: {
+            id: req.params.id 
+        }  
+        })
+        .then(function (data) {
+            console.log(data);
+            var classObj = {
+                name: data.className,
+                desc: data.classDescription,
+                schedule: data.classSchedule,
+                prereq: data.classPrerequisit,
+                price: data.classPrice
+            }
+            res.render('classes', classObj);
+            });                 
+        });
+    };

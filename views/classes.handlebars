@@ -1,26 +1,37 @@
-<div class="row">
-    <form class="create-form">
-        <div class="row">
-            <div class="input-field col s6">
-                <input placeholder="Placeholder" id="class_name" type="text" class="validate">
-                <label for="class_name">Class Name</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s6">
-                <i class="material-icons prefix">mode_edit</i>
-                <textarea id="class_desc" class="materialize-textarea"></textarea>
-                <label for="class_desc">Description:</label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="input-field col s12">
-                <input id="class_price" type="number" class="validate">
-                <label for="class_price">Price:</label>
-            </div>
-        </div>
-
-  <button type="submit">Add The Class</button>
-    </form>
+<div class=“paralax-container”>
+   <div class=“paralax”>
+       <img src=“/images/background1.jpg”>
+   </div>
 </div>
+<div class=“section white”>
+   <div class=“row container”>
+       <h2>{{this.name}}</h2>
+       <br>
+       <br>
+       <span>{{this.desc}}</span>
+       <br>
+       <span>{{this.schedule}}</span>
+       <br>
+       <span>{{this.prereq}}</span>
+       <br>
+       <span>{{this.price}}</span>
+   </div>
+</div>
+<div class=“paralax-container”>
+   <div class=“paralax”>
+       <img src=“/images/diver4.jpg”>
+   </div>
+</div>
+
+
+
+<script>
+   $(document).ready(function(){
+   $(‘.parallax’).parallax();
+ });
+</script>
+Message Input
+
+Message @MikeHeiser
+
+*bold* _italics_ ~strike~ `code` ```preformatted``` >quote
