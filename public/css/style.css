@@ -40,7 +40,7 @@
   margin: 25px;
 }
 .brand-logo {
-  color: white
+  color: white;
 }
 #index-banner {
   color: white;
@@ -48,13 +48,17 @@
 }
 nav ul a,
 nav .brand-logo {
-  color: white
+  color: white;
 }
 #download-button {
-  background-color:#0bafaf
+  background-color:#0bafaf;
 }
 .btn-large waves-effect waves-light lighten-1 {
   background-color: #0bafaf;
+}
+
+.colorWhite {
+  color: white;
 }
 
 p {
@@ -68,7 +72,7 @@ p {
   color: white;
 }
 #Dive {
-  width: 150px;
+  width: 600px;
   height: 150px;
   
   position:relative;

@@ -32,87 +32,93 @@
         <div class="nav-wrapper">
 
 
-                <ul class="right hide-on-med-and-down">
-                        <li>
-                          <a href="/index.html">Home</a>
-                        </li>
-                        <li>
-                          <a href="/classes.html">Courses</a>
-                        </li>
-                        <li>
-                          <a href="Team.html">Team</a>
-                        </li>
-                        <li>
-                          <a href="Photos.html">Media</a>
-                        </li>
-                        <li>
-                          <form action="/topSpots/" method="GET"> <a href="#"><button id="favorites"type="submit">Favorites</button></a></form>
-                        </li>
-                
-                 
-                
-                       
-                      </ul>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="classes.html">Courses</a>
+                </li>	
+                <li>
+                  <form action="/topSpots/1" method="GET">
+                    <a href="#">
+                      <button id="favorites" type="submit">Favorites</button>
+                    </a>
+                  </form>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
         </div>
     </nav>
    
-    <h1>
-        Meet Us
-    </h1>
-
-    <footer class="page-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col l3 s12">
-              <h5 class="white-text">Diving With The Stars</h5>
-              <a class="white-text">
-                <b>Address:</b>
-                8020 Zeus Drive, Los Angeles, CA 90046
-              </a>
-              <br>
-              <a class="white-text">
-                <b>Phone:</b>
-                310-508-0883
-              </a>
-              <p class="grey-text text-lighten-4"></p>
-            </div>
-            <div class="col l6 s12"></div>
-            <div class="col l3 s12">
-              <h5 class="white-text">Resources</h5>
-              <ul>
-                <li>
-                  <a class="white-text" target="_blank" href="https://www.padi.com/sites/default/files/documents/padi-courses/2.6.02%20tec%20diving%20safe%20diving%20practices.pdf">PADI Safe Practices</a>
-                </li>
-                <li>
-                  <a class="white-text" target="_blank" href="https://www.padi.com/sites/default/files/documents/padi-courses/2.1.5%20rstc%20medstate%20v201.pdf">PADI Medical Questionnaire</a>
-                </li>
-                <li>
-                  <a class="white-text" target="_blank" href="https://www.padi.com/sites/default/files/documents/2018-02/10648_DSDRelease_Medical_v1.pdf">PADI Participation Guide</a>
-                </li>
-              </ul>
-            </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="images/DiveTraining.jpg" alt="Brad" style="width:100%">
+          <div class="container">
+            <h3>Brad Bahmanpour</h3>
+            <h5 class="title">PADI IDC Staff Instructor &amp; Founder</h5>
+            <h6>Brad has more than 20 years of Diving Experience in 44 different countries.</h6>
+            <h6>PADI IDC Staff Instructor,Wreck Instructor,
+                Enriched Air Instructor,
+                Diver Propulsion Vehicle (DPV) Instructor,
+                Digital Underwater Photography Instructor,
+                Dry Suit Instructor,
+                Night Diver Instructor, 
+                Deep Diver Instructor,
+                Search & Recovery Instructor,
+                Underwater Navigator Instructor,
+                Care for Children w/AED Instructor,
+                Peak Performance Buoyancy Instructor,
+                Project Aware Instructor,
+                AWARE Coral Reef Conservation Sp Instructor, 
+                Emergency First Response (EFR) Instructor,
+                Emergency Oxygen Provider Instructor,
+                DAN - AED Instructor,
+                DAN - OXYGEN Instructor,
+                DAN - Advanced OXYGEN Instructor,
+                DAN - Hazardous Marine Life Injuries Instructor,
+                GUE - Fundamentals - Tech Pass,
+                GUE - Doubles Diver,
+                GUE - Drysuit Diver,
+                PADI - Ice Diver</h6>
+            <h6>brad@divingwiththestars.com</h6>
+            <br>
+          <!--  <p><button class="button">Contact</button></p> -->
+          <br>
           </div>
         </div>
-        </div>
-      </footer>
+      </div>
     
-      <!--  Scripts-->
-      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="js/materialize.js"></script>
-      <script src="js/init.js"></script>
-      <script>
-        $(".dropdown-trigger").dropdown();
-        $('.carousel.carousel-slider').carousel({
-          fullWidth: true,
-          indicators: true
-        });
-        $('#textarea1').val('New Text');
-        $('#textarea1').trigger('autoresize');
-        $(document).ready(function () {
-          $('.carousel').carousel();
-        });
-        var elem = document.querySelector('.carousel');
-        var instance = M.Carousel.init(elem, options);
-      </script>
+      <div class="column">
+        <div class="card">
+          <img src="images/ScubaCourses.jpg" alt="Mike" style="width:100%">
+          <div class="container">
+            <h3>Patrick Simon</h3>
+            <h5 class="title">Dive Master</h5>
+            <h6>Patrick is Dive Master and on it's path to become Instructor Assistant in next few months</h6>
+            <h6>patrick@divingwiththestars.com</h6>
+         <!--   <p><button class="button">Contact</button></p> -->
+         <br>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="images/tankdive.jpg" alt="John" style="width:100%">
+          <div class="container">
+            <h2>Tim Ward</h2>
+            <h5 class="title">Dive Master</h5>
+            <h5>Tim is Dive Master with more than 500 dives and more than 10 years of Diving experience</h5>
+            <h6>example@example.com</h6>
+            <br>
+          <!--  <h6><button class="button">Contact</button></h6> -->
+          </div>
+        </div>
+      </div>
+    </div>
 
 </html>

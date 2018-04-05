@@ -13,27 +13,27 @@ body {
     padding-bottom: 50px;
     font-size: 30px;
     color: #042A2B;
-    font-family: 'Courgette', cursive;
+    font-family: 'Lato';
 }
 
 #nextBut{
     padding: 10px;
     float: right;
-    background-color: #2292A4;
-    color: #042A2B;
-    border: solid 5px #77878B;
+    background-color:darkblue;
+    color: white;
+    border: solid 5px darkblue;
     margin-top: 20px;
-    font-family: 'Courgette', cursive;
+    font-family: 'Lato';
 
 }
 
 #prevBut {
     padding: 10px;
     float: left;
-    background-color: #2292A4;
-    color: #042A2B;
-    border: solid 5px #77878B;
+    background-color:darkblue;
+    color: white;
+    border: solid 5px darkblue;
     margin-top: 20px;
-    font-family: 'Courgette', cursive;
+    font-family: 'Courgette';
     font-weight: bolder;
 }
